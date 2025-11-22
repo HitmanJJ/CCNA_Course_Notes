@@ -65,27 +65,27 @@ USE the TAB key to complete partially entered commands IF the command exists.
 
 To enter Global Configuration Mode, enter the command, within Privileged EXEC mode
 
-'configure terminal' (or 'conf t')
+```configure terminal``` (or ```conf t```)
 
-Router# configure terminal
+```Router# configure terminal```
 
 Note the prompt change:
 
-Router(config) #		
+```Router(config) # ```
 
-Type 'exit' to drop back into 'Privileged EXEC' mode.
+Type ```exit``` to drop back into 'Privileged EXEC' mode.
 
 ---
 
 ### To Enable Password for User EXEC mode:
 
-Router(config)# enable password (password)
+```Router(config)# enable password {password_here}```
 
 - Passwords ARE case-sensitive.
 
 // This command encrypts plain-text passwords, visible in the config files, using simple encryption.
 
-Router(config)# service password-encryption
+```Router(config)# service password-encryption```
 
 If you enable 'service password-encryption'
 
@@ -101,9 +101,9 @@ If you disable 'service password-encryption'
 
 // This command enables passwords for the Privileged EXEC mode.
 
-Router(config)# enable secret (password)
+```Router(config)# enable secret {password_here}```
 
-// enable secret will ALWAYS be encrypted (at level 5)
+// enable secret will ALWAYS be encrypted (at level 5 - MD5 encryption algorithm)
 
 ---
 
@@ -119,38 +119,27 @@ Startup-config :
 
 To see the configuration files, inside 'Privileged EXEC' mode:
 
-Router# show running-config // for running config //
+```Router# show running-config``` // for running config //
 
 OR
 
-Router# show startup-config // for startup config //
+```Router# show startup-config``` // for startup config //
 
 ---
 
 To SAVE the Running configuration file, you can:
 
-Router# write
-Building configuration...
-[OK]
+  - ```Router# write``` → ```Building configuration...``` → ```[OK]```
 
-Router# write memory
-Building configuration...
-[OK]
+  - ```Router# write memory``` → ```Building configuration...``` → ```[OK]```
 
-Router# copy running-config startup-config
-
-Destination filename [startup-config]?
-
-Building configuration...
-[OK]
+  - ```Router# copy running-config startup-config``` → ```Destination filename [startup-config]?``` → ```Building configuration...``` → ```[OK]```
 
 ---
 
 To encrypt passwords:
 
-Router# conf t
-
-Router(config)# service password-encryption
+```Router# conf t``` → ```Router(config)# service password-encryption```
 
 This makes all current passwords *encrypted*
 
@@ -163,20 +152,20 @@ Future passwords will ALSO be *encrypted*
 
 Now you will see that the password is no longer in plaintext.
 
-“7” refers to the type of encryption used to encrypt the password. In this case, “7” uses Cisco’s proprietary encryption.
+```7``` refers to the type of encryption used to encrypt the password. In this case, ```7``` uses a simple Vigenère cipher with a publicly known, hardcoded key.
 
-“7” is fairly easy to crack since the encryption is weak.
+“7” is incredibly easy to crack since the encryption is weak.
 
-For BETTER / STRONGER encryption, use “enable secret”
+For BETTER / STRONGER encryption, use ```enable secret```
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/346f3015-9211-47a9-888f-4e02a013a728)
 
 
-“5” refers to MD5 encryption.
+```5``` refers to MD5 hashing--a one-way hashing algorithm.
 
-Can still be cracked but it’s much much stronger.
+Can still be cracked but it’s much stronger.
 
-Once you use “enable secret” command, this will override “enable password”
+Once you use ```enable secret``` command, this will cause the ```password```, from the ```enable password``` command, to be ignored (the *secret* will be used preferentially over the *password*) 
 
 ---
 
