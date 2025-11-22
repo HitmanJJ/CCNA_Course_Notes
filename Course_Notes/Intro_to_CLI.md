@@ -91,13 +91,13 @@ If you enable 'service password-encryption'
 
 - Current passwords WILL be encrypted.
 - Future passwords WILL be encrypted.
-- The 'enable secret' WILL NOT be effected.
+- The 'enable secret' WILL NOT be affected.
 
 If you disable 'service password-encryption'
 
 - Current passwords WILL NOT be decrypted.
 - Future passwords WILL NOT be encrypted.
-- The 'enable secret' WILL NOT be effected.
+- The 'enable secret' WILL NOT be affected.
 
 // This command enables passwords for the Privileged EXEC mode.
 
@@ -156,7 +156,7 @@ This makes all current passwords *encrypted*
 
 Future passwords will ALSO be *encrypted*
 
-“Enable secret” will not be effected (it’s ALWAYS encrypted)
+“Enable secret” will not be affected (it’s ALWAYS encrypted)
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/09c841fe-b5c0-4683-9082-baf060e24c03)
 
@@ -189,7 +189,7 @@ In this instance, disabling “service password-encryption”:
 
 - current passwords will NOT be decrypted (unchanged)
 - future passwords will NOT be encrypted
-- the “enable secret” will not be effected
+- the “enable secret” will not be affected
 
 ---
 
