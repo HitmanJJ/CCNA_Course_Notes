@@ -39,7 +39,7 @@ USER EXEC MODE:
 - User can look at some things but can't make ANY changes to the configuration.
 - AKA 'User Mode'
 
-Using the 'enable' command, in User EXEC mode, switches you to 'Privileged EXEC' mode.
+Using the ```enable``` command, in User EXEC mode, switches you to 'Privileged EXEC' mode.
 
 ---
 
