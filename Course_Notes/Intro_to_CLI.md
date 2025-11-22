@@ -164,7 +164,7 @@ For BETTER / STRONGER encryption, use ```enable secret```
 
 Can still be cracked, but it’s much stronger.
 
-Once you use ```enable secret``` command, this will cause the ```password```, from the ```enable password``` command, to be ignored (the *secret* will be used preferentially over the *password*) 
+Once you use ```enable secret``` command, this will cause the ```password```, from the ```enable password``` command, to be ignored (the *secret* takes precedence over the *password*) 
 
 ---
 
