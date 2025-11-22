@@ -210,3 +210,5 @@ In this instance, disabling “service password-encryption”:
   - They should be entered in privileged exec mode, NOT global config mode. 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/5f7357d4-f44b-4a61-a24c-86f3368f30f7)
+
+- All 3 of the above commands are used to save the current ```running-config```, and make it the ```startup-config```
