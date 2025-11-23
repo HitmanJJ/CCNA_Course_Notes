@@ -88,10 +88,10 @@ Altogether the header + trailer of an ETHERNET FRAME = 26 bytes (header + traile
 
 MAC ADDRESS (48 bits long)
 
-- 6-bytes (48-bits) physical address assigned to the device when it is made.
+- 6-byte (48-bit) physical address assigned to the device when it is made.
 - AKA 'Burned-In Address' (BIA)
 - Is globally unique
-- First 3 bytes are the OUI (Organizationally Unique Identifier) which is assigned to the company making the device
+- First 3 bytes are the _OUI (Organizationally Unique Identifier)_, which is assigned to the company making the device
 - The last 3 bytes are unique to the device itself
 - Written as 12 hexadecimal characters
 
@@ -113,15 +113,17 @@ F0/1, F0/2, F0/3... F stands for "Fast Ethernet" or 100 Mbps interfaces.
 
 MAC ADDRESS TABLE
 
-Each Switch stores a DYNAMICALLY LEARNED MAC ADDRESS TABLE, using the SOURCE MAC ADDRESS of frames it receives.
+Each Switch stores a DYNAMICALLY-LEARNED MAC ADDRESS TABLE, using the SOURCE MAC ADDRESS of frames it receives.
+  - "Dynamically-learned" because it wasn't manually configured on the switch. The switch "learned" it itself
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/582421a9-6351-48b7-bfe1-c2153520920c)
 
 
-When a Switch doesn't know the DESTINATION MAC ADDRESS of a frame (UNKNOWN UNICAST FRAME), it is forced to FLOOD the frame - Forward the frame out of ALL it's interfaces, except the one it received the packet from.
+When a Switch doesn't know the DESTINATION MAC ADDRESS of a frame (___UNKNOWN UNICAST FRAME___), it is forced to FLOOD the frame
+  - _Flooding_ → forwarding the frame out of ALL the switch's interfaces, except the one it received the packet from.
 
 When a KNOWN Unicast Frame is known (MAC Address is recognized by the entry in the MAC ADDRESS TABLE), the frame is FORWARDED like normal.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/ff731ab3-fad2-4e10-9fa7-ce583a6a0bb2)
 
-- Note: Dynamic MAC Addresses are removed from the MAC ADDRESS TABLE every 5 minutes of inactivity.
+- Note: Dynamic MAC Addresses are removed from the MAC ADDRESS TABLE every 5 minutes of inactivity (on Cisco switches).
