@@ -116,12 +116,11 @@ Will show:
 
 ```SW1#clear mac address-table dynamic```
 
-// clears the entire switches MAC table.
-// IF the optional MAC address is used, it will clear the SPECIFIC MAC address.
+// clears the all dynamic MAC addresses in the switch's MAC address table.
 
 ```SW1#clear mac address-table dynamic address {MAC_address}```
 
-// clears the MAC address entry for the specified {MAC_address} in the MAC Address table
+// clears the MAC address entry for the specified {MAC_address} in the MAC address table
 
 ```SW1#clear mac address-table dynamic interface {interface_name}```
 
