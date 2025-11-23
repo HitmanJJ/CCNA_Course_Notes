@@ -78,7 +78,8 @@ FCS
 
 ---
 
-Altogether the ETHERNET FRAME = 26 bytes (header + trailer)
+Altogether the header + trailer of an ETHERNET FRAME = 26 bytes (header + trailer)
+  - Does ___NOT___ include the packet of information that the header and trailer encapsulate 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/c8c1a143-0675-4aa4-83bc-6031d10cc0b8)
 
