@@ -22,7 +22,11 @@ Ethernet Trailer --- PACKET --- Ethernet Header
 
 The Ethernet Header contains 5 Fields:
 
-Preamble -- SFD -- Destination -- Source -- Type
+  - _Preamble_ (7 bytes)
+  - _SFD_ (1 byte)
+  - _Destination_
+  - _Source_
+  - _Type_ (or _Length_)
 7 bytes  -- 1 byte -- 6 bytes -- 6 bytes -- 2 bytes
 
 ---
@@ -31,12 +35,12 @@ PREAMBLE:
 
 - Length: 7 bytes (56 bits)
 - Alternating 1's and 0's
-- 10101010 * 7x
+- 10101010 * 7
 - Allows devices to synchronize their receiver clocks
 
 SFD : ‘Start Frame Delimiter’
 
-- Length: 1 byte(8 bits)
+- Length: 1 byte (8 bits)
 - 10101011
 - Marks end of the PREAMBLE and beginning of rest of frame.
 
