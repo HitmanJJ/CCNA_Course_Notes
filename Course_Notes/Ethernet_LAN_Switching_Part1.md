@@ -68,6 +68,7 @@ FCS
 
 - ‘FRAME CHECK SEQUENCE’
 - 4 bytes (32 bits) in length
+- Used by the receiving device
 - Detects corrupted data by running a 'CRC' algorithm over the received data
 - CRC = "Cyclic Redundancy Check"
 
