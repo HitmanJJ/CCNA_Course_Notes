@@ -24,10 +24,9 @@ The Ethernet Header contains 5 Fields:
 
   - _Preamble_ (7 bytes)
   - _SFD_ (1 byte)
-  - _Destination_
-  - _Source_
-  - _Type_ (or _Length_)
-7 bytes  -- 1 byte -- 6 bytes -- 6 bytes -- 2 bytes
+  - _Destination_ (6 bytes)
+  - _Source_ (6 bytes)
+  - _Type_ or _Length_ (2 bytes)
 
 ---
 
@@ -49,9 +48,9 @@ SFD : ‘Start Frame Delimiter’
 DESTINATION AND SOURCE
 
 - Layer 2 Address
-- Indicates the devices sending / receiving the frame
+- Indicates the MAC addresses of the devices sending / receiving the frame
 - MAC = ’Media Access Control’
-- = 6 byte (48-bit) address of the physical device
+- 6-byte (48-bit) address of the physical device
 
 ---
 
