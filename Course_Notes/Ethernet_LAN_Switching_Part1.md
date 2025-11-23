@@ -56,9 +56,10 @@ DESTINATION AND SOURCE
 
 TYPE / LENGTH
 
-- 2 bytes (16-bit) field
-- A value of 1**500 or less** in this field indicates the LENGTH of the encapsulated packet (in bytes)
-- A value of **1536 or greater** in this field indicates the TYPE of the encapsulated packet and length is determined via other methods.
+- 2-byte (16-bit) field
+- A value of **1500 or less** in this field indicates the **LENGTH** of the encapsulated packet (in bytes)
+  - Ex: If value = 1,400 → encapsulated packet is 1,400 bytes in length
+- A value of **1536 or greater** in this field indicates the **TYPE** of the encapsulated packet. The length is determined via other methods.
 - IPv4 = 0x0800 (hexadecimal) = 2048 in decimal
 - IPv6 = 0x86DD (hexadecimal) = 34525 in decimal
 - Layer 3 protocol used in the encapsulated Packet, which is almost always Internet Protocol (IP) version 4 or version 6.
