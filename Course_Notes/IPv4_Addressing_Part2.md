@@ -54,7 +54,7 @@ where N = # of HOST bits
 
 ### FIRST / LAST USABLE ADDRESSES
 
-```Class C Network```
+#### ```Class C``` Network
 
 192.168.1.0/24 (NETWORK ADDRESS)
 
@@ -72,7 +72,7 @@ Subtract 1 from the BROADCAST ADDRESS = 11111110
 
 ---
 
-```Class B Network```
+#### ```Class B``` Network
 
 172.16.0.0/16 (NETWORK ADDRESS)
 
@@ -90,7 +90,7 @@ Subtract 1 to Broadcast Address so 1111 1111 1111 1110
 
 ---
 
-```Class A``` Network
+#### ```Class A``` Network
 
 10.0.0.0/8 (NETWORK ADDRESS)
 
