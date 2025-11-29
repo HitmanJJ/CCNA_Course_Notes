@@ -285,9 +285,9 @@ The CLASSES we will be focusing on are CLASS A to CLASS C.
 ![image](https://github.com/psaumur/CCNA/assets/106411237/7cc286bf-ce76-4eee-af52-062a63dac2b4)
 
 
-D CLASS are reserved for 'MULTICAST' ADDRESSES
+```CLASS D``` are reserved for 'MULTICAST' ADDRESSES
 
-E CLASS are reserved for 'EXPERIMENTAL' ADDRESSES
+```CLASS E``` are reserved for 'EXPERIMENTAL' ADDRESSES
 
 ---
 
