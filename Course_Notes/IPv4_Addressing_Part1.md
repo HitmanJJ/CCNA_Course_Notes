@@ -9,7 +9,7 @@ OSI MODEL - NETWORK LAYER (Layer 3)
 
 ROUTING
 
-SWITCHES (Layer 2 Devices) do no separate different networks. They connect and EXPAND networks within the same LAN.
+SWITCHES (Layer 2 Devices) <ins>**do not**</ins> separate different networks. They connect and EXPAND networks w/in the same LAN.
 
 By adding a ROUTER, however, between two SWITCHES, you create a SPLIT in the network; each with it's own network IP address.
 
