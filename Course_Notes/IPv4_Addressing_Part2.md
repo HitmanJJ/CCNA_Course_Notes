@@ -150,9 +150,9 @@ _Protocol_ (Layer-2 Status):
 
 ```R1#conf t```
 
-// enter interface configuration mode
+// enter interface configuration mode  
 
-```R1(config)#interface gigabitethernet 0/0```
+```R1(config)#interface gigabitethernet 0/0``` or ```R1(config)#interface gigabitethernet0/0```
 
 The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they are listed in physical network maps).
 
