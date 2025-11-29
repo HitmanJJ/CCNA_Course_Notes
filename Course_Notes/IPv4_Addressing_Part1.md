@@ -291,7 +291,7 @@ E CLASS are reserved for 'EXPERIMENTAL' ADDRESSES
 
 ---
 
-A CLASS USUALLY have a range of 1-126? WHY?
+```Class A``` range is usually considered to be 1-126? Why is 127 included?
 
 Because 127 is usually reserved for 'loopback addresses'
 
