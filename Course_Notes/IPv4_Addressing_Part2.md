@@ -2,25 +2,23 @@
 
 MAXIMUM HOSTS PER NETWORK
 
-Let's take a Class C Network:
+Let's take a ```Class C``` Network:
 
 192.168.1.0/24
 
-(gives a range of 0 ---> 255)
+(gives a range of 0-255 for the host bits)
 
 Said another way, the HOST portion (the .0) is equal to 8 bits so...
 
-Host portion = 8 bits = 2^8 = 256
+Host portion = 8 bits = 2<sup>8</sup> = 256
 
-HOWEVER, since the Network Address (Network ID)
+HOWEVER, since the Network Address (Network ID) of 192.168.1.0 is reserved
 
-192.168.1.0 is Reserved
-
-AND
+AND  
 
 192.168.1.255 (BROADCAST ADDRESS) is ALSO reserved.
 
-The MAXIMUM Hosts per Network = 2^8-2 = 254 hosts
+The MAXIMUM Hosts per Network = 2<sup>8</sup> - 2 = 254 hosts
 
 ---
 
