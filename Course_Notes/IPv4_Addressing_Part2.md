@@ -62,7 +62,7 @@ Add 1 so the Host Portion = 00000001
 
 192.168.1.1/24 = FIRST USABLE ADDRESS
 
----
+<br/>
 
 192.168.1.255/24 (BROADCAST ADDRESS)
 
@@ -80,7 +80,7 @@ Add 1 to Host portion so 0000 0000 0000 0001
 
 172.16.0.1/16 is the FIRST USABLE ADDRESS
 
----
+<br/>
 
 172.16.255.255/16 (BROADCAST ADDRESS)
 
@@ -98,7 +98,7 @@ Add 1 to Host portion so 00000000 00000000 00000001
 
 10.0.0.1/8 is the FIRST USABLE ADDRESS
 
----
+<br/>
 
 10.255.255.255/8 (BROADCAST ADDRESS)
 
@@ -108,7 +108,7 @@ Subtract 1 to Broadcast Address so 1111 1111 1111 1110
 
 ---
 
-CISCO CLI DEVICE CONFIGURATION
+### CISCO CLI DEVICE CONFIGURATION
 
 R1> enable
 R1# show ip interface brief
