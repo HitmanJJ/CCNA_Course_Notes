@@ -16,7 +16,7 @@ Ethernet Trailer contains 1 Field:
 
 FCS (Frame Check Sequence) = 4 bytes
 
-- The PREAMBLE + SFD is not usually considered part of the ETHERNET HEADER.
+- The PREAMBLE + SFD is usually <ins>**NOT**</ins> considered part of the ETHERNET HEADER.
 
 THEREFORE the size of the ETHERNET HEADER + TRAILER is 18 bytes
 
