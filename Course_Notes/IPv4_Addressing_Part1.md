@@ -352,7 +352,7 @@ If the HOST PORTION of an IP ADDRESS is ALL 1's, it means it is the BROADCAST AD
 
 A BROADCAST ADDRESS cannot be assigned to a HOST.
 
-DESTINATION IP : 192.168.1.255 (Broadcast IP address)
+DESTINATION IP : 192.168.1.255 (Broadcast IP address)  
 DESTINATION MAC : FFFF.FFFF.FFFF (Broadcast MAC address)
 
 Because of the two 'reserved' addresses, the range of USABLE HOST ADDRESSES is 1 to 254.
