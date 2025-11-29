@@ -272,7 +272,7 @@ The class of an IPv4 is determined by the FIRST OCTET of the address.
 
 | CLASS | FIRST OCTET | FIRST OCTET'S NUMERIC RANGE  |
 |-------|-------------|------------------------------|
-| A     |  0xxxxxxx   |     0-126 + 127 'loopback' |
+| A     |  0xxxxxxx   |     0-126 + 127 (loopback) |
 | B 		|	 10xxxxxx 	|			128-191                |
 | C 		|	 110xxxxx 	|			192-223                |
 | D 		|	 1110xxxx 	|			224-239                |
@@ -293,7 +293,7 @@ The CLASSES we will be focusing on are CLASS A to CLASS C.
 
 ```Class A``` range is usually considered to be 1-126? Why is 127 included?
 
-Because 127 is usually reserved for 'loopback addresses'
+Because 127 is usually reserved for _loopback addresses_
 
 127.0.0.0 to 127.255.255.255 are used to test the network.
 
