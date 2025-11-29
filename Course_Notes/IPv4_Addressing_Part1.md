@@ -270,13 +270,13 @@ IPv4 ADDRESS CLASSES
 IPv4 ADDRESSES are split up into 5 different 'classes'.
 The class of an IPv4 is determined by the FIRST OCTET of the address.
 
-CLASS 		FIRST OCTET 		FIRST OCTET NUMBERIC RANGE
-
-A 			 0xxxxxxx 				0-126 + 127 'loopback'
-B 			 10xxxxxx 				128-191
-C 			 110xxxxx 				192-223
-D 			 1110xxxx 				224-239
-E 			 1111xxxx 				240-255
+| CLASS | FIRST OCTET | FIRST OCTET NUMBERIC RANGE |
+|-------|-------------|----------------------------|
+| A     |  0xxxxxxx   |     0-126 + 127 'loopback' |
+| B 		|	 10xxxxxx 	|			128-191                |
+| C 		|	 110xxxxx 	|			192-223                |
+| D 		|	 1110xxxx 	|			224-239                |
+| E 		|	 1111xxxx 	|			240-255                |
 
 From the above chart, if the FIRST OCTECT STARTS with 0, the numeric RANGE of possible first DOTTED DECIMAL is between 0-127.
 
