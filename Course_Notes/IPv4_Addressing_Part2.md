@@ -159,13 +159,13 @@ The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/df83bf09-c391-45b7-b1b4-41db061b84f4)
 
 
-// This sets the IP ADDRESS and SUBNET MASK of device
+// sets the IP ADDRESS and SUBNET MASK of device
 
-R1(config-if) #ip address 10.255.255.254 255.0.0.0
+```R1(config-if)#ip address 10.255.255.254 255.0.0.0```
 
-// This enables the device
+// enables the network interface
 
-R1(config-if) #no shutdown
+```R1(config-if)#no shutdown```
 
 ---
 
