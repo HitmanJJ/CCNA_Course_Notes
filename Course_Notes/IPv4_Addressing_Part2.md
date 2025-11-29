@@ -110,8 +110,9 @@ Subtract 1 to Broadcast Address so 1111 1111 1111 1110
 
 ### CISCO CLI DEVICE CONFIGURATION
 
-R1> enable
-R1# show ip interface brief
+```R1>enable```
+  
+```R1#show ip interface brief```
 
 Lists the Interfaces, IP Addresses, Method, Status, and Protocol.
 
@@ -121,7 +122,7 @@ Interfaces:
 
 IP Addresses
 
-- Self explanatory. What IP Address is assigned.
+- The IP Address that is assigned.
 
 Method
 
