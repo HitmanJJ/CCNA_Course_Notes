@@ -308,9 +308,9 @@ The PREFIX LENGTH is the LENGTH of the NETWORK PORTION of the Address.
 
 From the examples above:
 
-12.128.251.23/8 is a CLASS A Address
-154.78.111.32/16 is a CLASS B Address
-192.168.1.254/24 is a CLASS C Address
+12.128.251.23/8 is a ```CLASS A``` Address  
+154.78.111.32/16 is a ```CLASS B``` Address  
+192.168.1.254/24 is a ```CLASS C``` Address
 
 Because the NETWORK portion of CLASS A is so short, it means there are a LOT more potential Hosts.
 
