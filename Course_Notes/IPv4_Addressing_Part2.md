@@ -114,28 +114,28 @@ Subtract 1 to Broadcast Address so 1111 1111 1111 1110
   
 ```R1#show ip interface brief```
 
-Lists the Interfaces, IP Addresses, Method, Status, and Protocol.
+Lists: _Interfaces_, _IP Addresses_, _Method_, _Status_, and _Protocol_.
 
-Interfaces:
+_Interfaces_:
 
-- What port interfaces are available/connected
+- The port interfaces on the device.
 
-IP Addresses
+_IP Addresses_:
 
-- The IP Address that is assigned.
+- The IP Address that is assigned to each interface.
 
-Method
+_Method_:
 
-- What method was the IP address assigned?
+- The method that the interface was assigned an address.
 
-Status (Layer 1 Status)
+_Status_ (Layer-1 Status):
 
 - Current status of interface
 - 'administratively down' = Interface has been disabled with the 'shutdown' command
 
-Administratively down is the DEFAULT status of Cisco Router interfaces.
+Administratively down is the DEFAULT status of Cisco <ins>**Router**</ins> interfaces.
 
-Cisco Switch interfaces are NOT administratively down by DEFAULT.
+Cisco <ins>**Switch**</ins> interfaces are <ins>**NOT**</ins> administratively down by DEFAULT.
 
 Protocol (Layer 2 Status)
 
