@@ -37,8 +37,8 @@ The NETWORK portion of given IP Address will be the same for all HOSTS on a give
 
 Example:
 
-**192.168.1**._100_
-**192.168.1**._105_
+**192.168.1**._100_  
+**192.168.1**._105_  
 **192.168.1**._205_
 
 All of these addresses are on the SAME Network because the NETWORK PORTION of their IP Address is the same (**192.168.1**) while the HOST part (_100_, _105_, _205_) is UNIQUE!
