@@ -323,13 +323,13 @@ NETMASK
 ![image](https://github.com/psaumur/CCNA/assets/106411237/874c022f-9b8c-4862-a495-597682b014a4)
 
 
-A NETMASK is written like a Dotted Decimal IP Address. The _network_ portion is written with all 1's 
+A NETMASK is written like a Dotted Decimal IP Address. The _network_ portion is represented with all 1's, the _host_ portion is represented with all 0's in each octet
 
-CLASS A: /8 = 255.0.0.0
+```CLASS A```: /8 = 255.0.0.0
 
-CLASS B: / 16 = 255.255.0.0
+```CLASS B```: /16 = 255.255.0.0
 
-CLASS C: /24 = 255.255.255.0
+```CLASS C```: /24 = 255.255.255.0
 
 ---
 
