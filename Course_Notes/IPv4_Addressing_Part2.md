@@ -22,7 +22,7 @@ The MAXIMUM Hosts per Network = 2<sup>8</sup> - 2 = 254 hosts
 
 ---
 
-What about a Class B Network ?
+What about a ```Class B``` Network ?
 
 172.16.0.0/16 ----> 172.16.255.255/16
 
@@ -32,7 +32,7 @@ Maximum hosts per network = 2<sup>16</sup> - 2 = 65,534 hosts
 
 ---
 
-What about a Class A Network ?
+What about a ```Class A``` Network ?
 
 10.0.0.0/8 -------------> 10.255.255.255/8
 
@@ -54,7 +54,7 @@ where N = # of HOST bits
 
 FIRST / LAST USABLE ADDRESSES
 
-Class C Network
+```Class C Network```
 
 192.168.1.0/24 (NETWORK ADDRESS)
 
@@ -72,7 +72,7 @@ Subtract 1 from the BROADCAST ADDRESS = 11111110
 
 ---
 
-Class B Network
+```Class B Network```
 
 172.16.0.0/16 (NETWORK ADDRESS)
 
@@ -90,7 +90,7 @@ Subtract 1 to Broadcast Address so 1111 1111 1111 1110
 
 ---
 
-Class A Network
+```Class A``` Network
 
 10.0.0.0/8 (NETWORK ADDRESS)
 
