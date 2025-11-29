@@ -270,8 +270,8 @@ IPv4 ADDRESS CLASSES
 IPv4 ADDRESSES are split up into 5 different 'classes'.
 The class of an IPv4 is determined by the FIRST OCTET of the address.
 
-| CLASS | FIRST OCTET | FIRST OCTET NUMBERIC RANGE |
-|-------|-------------|----------------------------|
+| CLASS | FIRST OCTET | FIRST OCTET'S NUMERIC RANGE  |
+|-------|-------------|------------------------------|
 | A     |  0xxxxxxx   |     0-126 + 127 'loopback' |
 | B 		|	 10xxxxxx 	|			128-191                |
 | C 		|	 110xxxxx 	|			192-223                |
