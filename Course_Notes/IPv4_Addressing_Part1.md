@@ -14,8 +14,8 @@ SWITCHES (Layer 2 Devices) do no separate different networks. They connect and E
 By adding a ROUTER, however, between two SWITCHES, you create a SPLIT in the network; each with it's own network IP address.
 
 Example:
-192.168.1.0/24 (255.255.255.0)
-192.168.2.0/24 (255.255.255.0)
+  - 192.168.1.0/24 (255.255.255.0)  
+  - 192.168.2.0/24 (255.255.255.0)
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/3d414956-cb53-46f6-b386-3fc9bba11802)
 
@@ -37,13 +37,13 @@ The NETWORK portion of given IP Address will be the same for all HOSTS on a give
 
 Example:
 
-192.168.1.100
-192.168.1.105
-192.168.1.205
+**192.168.1**._100_
+**192.168.1**._105_
+**192.168.1**._205_
 
-All of these addresses are on the SAME Network because the NETWORK PORTION of their IP Address is the same (192.168.1) while the HOST part (100,105,205) is UNIQUE!
+All of these addresses are on the SAME Network because the NETWORK PORTION of their IP Address is the same (**192.168.1**) while the HOST part (_100_, _105_, _205_) is UNIQUE!
 
-When a BROADCAST message hits a ROUTER, it does NOT continue onward. It stays within the LOCAL LAN (Switch/Hosts).
+When a BROADCAST message hits a ROUTER, it does NOT continue onward. It stays w/in the LOCAL LAN (Switch/Hosts).
 
 ---
 
