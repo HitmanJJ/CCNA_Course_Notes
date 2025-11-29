@@ -1,6 +1,6 @@
 # 8. IPv4 ADDRESSING : PART 2
 
-MAXIMUM HOSTS PER NETWORK
+### Maximum Hosts Per Network
 
 Let's take a ```Class C``` Network:
 
@@ -52,7 +52,7 @@ where N = # of HOST bits
 
 ---
 
-FIRST / LAST USABLE ADDRESSES
+### FIRST / LAST USABLE ADDRESSES
 
 ```Class C Network```
 
