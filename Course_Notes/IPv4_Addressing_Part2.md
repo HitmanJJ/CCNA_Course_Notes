@@ -133,11 +133,11 @@ _Status_ (Layer-1 Status):
 - Current status of interface
 - 'administratively down' = Interface has been disabled with the 'shutdown' command
 
-Administratively down is the DEFAULT status of Cisco <ins>**Router**</ins> interfaces.
+Cisco <ins>**router**</ins> interfaces <ins>**are**</ins> administratively down by DEFAULT.
 
-Cisco <ins>**Switch**</ins> interfaces are <ins>**NOT**</ins> administratively down by DEFAULT.
+Cisco <ins>**switch**</ins> interfaces <ins>**are NOT**</ins> administratively down by DEFAULT.
 
-Protocol (Layer 2 Status)
+_Protocol_ (Layer-2 Status):
 
 - Cannot operate if Status (Layer 1) is down
   
@@ -148,13 +148,13 @@ Protocol (Layer 2 Status)
 
 // configure terminal cmd
 
-R1# conf t
+```R1#conf t```
 
-// This enters interface configuration mode
+// enter interface configuration mode
 
-R1(config)# interface gigabitethernet 0/0
+```R1(config)#interface gigabitethernet 0/0```
 
-This can be shortened to 'g0/0' like they are listed in physical network maps.
+The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they are listed in physical network maps).
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/df83bf09-c391-45b7-b1b4-41db061b84f4)
 
