@@ -59,7 +59,7 @@ IPv4 Headers contain MORE fields than the ETHERNET header.
 
 IPv4 Headers contain a SOURCE IP Address and DESTINATION IP Address field.
 
-This FIELD is 32-bits(4-bytes) in length (0-31)
+These two fields are each 32 bits (4 bytes) in length (0-31)
 
 192.168.1.254 (each decimal number represents 8 bits)
 
