@@ -26,9 +26,9 @@ What about a Class B Network ?
 
 172.16.0.0/16 ----> 172.16.255.255/16
 
-Host portion = 16 bits = 2^16 = 65,536
+Host portion = 16 bits = 2<sup>16</sup> = 65,536 addresses
 
-Maximum hosts per network = 2^16-2 = 65,534 hosts
+Maximum hosts per network = 2<sup>16</sup> - 2 = 65,534 hosts
 
 ---
 
@@ -36,9 +36,9 @@ What about a Class A Network ?
 
 10.0.0.0/8 -------------> 10.255.255.255/8
 
-Host portion = 24 bits = 2^24 = 16,777,216
+Host portion = 24 bits = 2<sup>24</sup> = 16,777,216
 
-Maximum hosts per network = 2^24-2 = 16,777,214 hosts
+Maximum hosts per network = 2<sup>24</sup> - 2 = 16,777,214 hosts
 
 ---
 
@@ -46,9 +46,9 @@ THEREFORE:
 
 The formula for calculating the number of HOSTS on a network is:
 
-2 ^ N - 2 (2 to the power of N - 2)
+2<sup>N</sup> - 2
 
-where N = number of HOST bits
+where N = # of HOST bits
 
 ---
 
