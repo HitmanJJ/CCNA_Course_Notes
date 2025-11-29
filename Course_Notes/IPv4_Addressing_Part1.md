@@ -343,7 +343,7 @@ If the HOST PORTION of an IP ADDRESS is ALL 0's, it means it is the NETWORK ADDR
 Example: 192.168.1.0/24 = THIS is a NETWORK ADDRESS.
 
 The NETWORK ADDRESS <ins>**cannot**</ins> be assigned to a HOST.  
-A NETWORK ADDRESS is the FIRST ADDRESS of the network.
+The NETWORK ADDRESS is the FIRST ADDRESS of the network.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/53eafb43-2a6f-422c-af19-866946d78efa)
 
