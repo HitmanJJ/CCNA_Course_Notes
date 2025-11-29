@@ -154,7 +154,7 @@ _Protocol_ (Layer-2 Status):
 
 ```R1(config)#interface gigabitethernet 0/0``` or ```R1(config)#interface gigabitethernet0/0```
 
-The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they are listed in physical network maps).
+The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they often appear in physical network maps).
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/df83bf09-c391-45b7-b1b4-41db061b84f4)
 
