@@ -37,6 +37,7 @@ The NETWORK portion of given IP Address will be the same for all HOSTS on a give
 
 Example:
 
+
 **192.168.1**._100_  
 **192.168.1**._105_  
 **192.168.1**._205_
