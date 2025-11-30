@@ -171,27 +171,27 @@ The ```gigabitethernet 0/0``` portion can be shortened to ```g0/0``` (like they 
 
 Two messages should appear showing the state has changed to 'up' (Status). Second message should show line protocol is now 'up' (Protocol).
 
-// 'do' allows you to run a Privileged EXEC command from outside the mode.
+// ```do``` allows you to run a Privileged EXEC command from outside the mode.
 
-R1(config-if) #do show ip interface brief
+```R1(config-if)#do show ip interface brief```
 
 Good to confirm that the device/interface you have configured is up and running.
 
 ---
 
-More 'show' CLI Commands
+### More ```show``` CLI Commands
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/bdc1152e-1946-4ddb-ae72-1e23b9c9defa)
 
 
-'show interfaces <interface name>'
+```show interfaces <interface_name>```
 
 - Shows Layer 1 and Layer 2 information about the interface and some Layer 3.
 - Shows MAC Address (or BIA address)
 - IP Address
 - ... and so much more
 
-'show interfaces description'
+```show interfaces description```
 
 - Allows you to add descriptions for interfaces.
 
@@ -199,12 +199,12 @@ Example:
 
 // Configure mode for interface Gigabyte Interface 0/0
 
-R1(config) #int g0/0
+```R1(config)#int g0/0```
 
-R1(config) #description ## to SW1 ##
+```R1(config)#description ## to SW1 ##```
 
-This sets the 'Description' column to display:
+This sets the ```Description``` column in the ```show interfaces description``` table to display:
 
-Interface 				Description
-
-Gi0/0                   ## to SW1 ##
+| Interface | Description |
+|-----------|-------------|
+| Gi0/0 | ## to SW1 ## |
