@@ -137,29 +137,31 @@ If the speed is 1000 Mbps or great, it will use FULL DUPLEX.
 
 ---
 
-INTERFACE COUNTERS AND ERRORS
+### Interface Counters & Errors
 
 Show using the:
 
 // Privileged EXEC mode
 
-SW1#show interfaces <interface name>
+```SW1#show interfaces <interface name>```
 
 Error stats will be at the bottom.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/20d6affd-6014-427d-9ad9-c638ace358f8)
 
 
-**Packets Received / Total bytes received.**
+- ```packets input``` → total # of packets received on the interface
+  
+- ```{# of bytes} bytes``` → total # of bytes in the packets received on the interface
 
-**Runts**: Frames that are smaller than the minimum frame size (64 bytes)
+- ```runts``` → frames that are smaller than the minimum frame size (64 bytes)
+  
+- ```giants``` → frames that are larger than the maximum frame size (1518 bytes)
 
-**Giants**: Frames that are larger than the maximum frame size (1518 bytes)
+- ```CRC``` → frames that failed the CRC check (in the Ethernet FCS trailer)
 
-**CRC**: Frames that failed the CRC check (in the Ethernet FCS trailer)
+- ```frame``` → frames that have an incorrect format (due to an error)
 
-**Frame**: Frames that have an incorrect format (due to an error)
+- ```input errors``` → total of various counters, such as the above four
 
-**Input errors**: Total of various counters, such as the above four
-
-**Output errors**: Frames the SWITCH tried to send, but failed due to an error
+- ```output errors``` → frames the SWITCH tried to send, but failed due to an error
