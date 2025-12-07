@@ -72,7 +72,7 @@ Inside Global Config Mode (config t):
 
 This will set the interfaces in the specified range to ```administratively down```
 
-Confirm with 'show interface status' in Privileged EXEC mode or if in CONFIG mode, use 'do show interface status'
+Confirm with ```show interface status``` in Privileged EXEC mode or if in CONFIG mode, use 'do show interface status'
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/8d1d49d3-e000-4570-ab7e-b994b959ebd5)
 
