@@ -78,15 +78,15 @@ Confirm with ```show interface status``` in Privileged EXEC mode or if in CONFIG
 
 ---
 
-### Full / Half Duplex
+### Full/Half Duplex
 
 #### Half Duplex:
 
-- Device cannot send / receive data at the same time. If it is receiving a frame, it must wait before sending a frame.
+- Device <ins>**cannot**</ins> send / receive data at the same time. If it is receiving a frame, it must wait before sending a frame.
 
 #### Full Duplex:
 
-- Device CAN send / receive data at the same time. It does NOT have to wait.
+- Device <ins>**can**</ins> send/receive data at the same time. It does NOT have to wait.
 
 MOST modern SWITCHES support FULL DUPLEX.
 
