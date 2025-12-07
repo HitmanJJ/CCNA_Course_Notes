@@ -10,11 +10,11 @@ CISCO CLI for SWITCHES
 
 // enter Privileged EXEC mode
 
-SW1>enable
+```SW1>enable```
 
 // Show all interfaces of Switch 1.
 
-SW# show ip interface brief
+```SW1#show ip interface brief```
 
 This will show the interfaces currently on Switch 1. It has the same information structure as Cisco Routers.
 
@@ -29,7 +29,7 @@ Unconnected devices will show as "down" and "down" (not connected to another dev
 
 // Show the status of all interfaces on SW1
 
-SW1#show interfaces status
+```SW1#show interfaces status```
 
 This will list:
 
@@ -64,11 +64,11 @@ Inside Global Config Mode (config t):
 ![image](https://github.com/psaumur/CCNA/assets/106411237/06e2e267-1e07-48a1-8c8c-8edbd5bd48ae)
 
 
-SW1(config)#interface range f0/5 - 12   // Choose all interfaces from 0/5 to 0/12
+```SW1(config)#interface range f0/5 - 12```   // Choose all interfaces from 0/5 to 0/12
 
-SW1(config-if-range)#description ## not in use ##
+```SW1(config-if-range)#description ## not in use ##```
 
-SW1(config-if-range)#shutdown
+```SW1(config-if-range)#shutdown```
 
 << this will list all the interfaces being set to administratively down >>
 
