@@ -3,7 +3,7 @@
 ![image](https://github.com/psaumur/CCNA/assets/106411237/5d0d80dc-74d1-4656-841c-fcaa2b89c760)
 
 
-CISCO CLI for SWITCHES
+### CISCO CLI for SWITCHES
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/e3947ef5-9100-426f-8d62-fd4ce5224351)
 
@@ -51,7 +51,7 @@ This will list:
 
 ---
 
-INTERFACE RANGE
+### Interface Ranges
 
 Unused Interfaces can pose a security risk so it's a good idea to deactivate them.
 
@@ -70,7 +70,7 @@ Inside Global Config Mode (config t):
 
 ```SW1(config-if-range)#shutdown```
 
-<< this will list all the interfaces being set to administratively down >>
+This will set the interfaces in the specified range to ```administratively down```
 
 Confirm with 'show interface status' in Privileged EXEC mode or if in CONFIG mode, use 'do show interface status'
 
