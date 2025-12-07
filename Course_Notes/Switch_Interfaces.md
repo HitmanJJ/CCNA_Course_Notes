@@ -1,9 +1,9 @@
-# 9. SWITCH INTERFACES
+# 9. Switch Interfaces
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/5d0d80dc-74d1-4656-841c-fcaa2b89c760)
 
 
-### CISCO CLI for SWITCHES
+### Cisco CLI for Switches
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/e3947ef5-9100-426f-8d62-fd4ce5224351)
 
@@ -78,13 +78,13 @@ Confirm with ```show interface status``` in Privileged EXEC mode or if in CONFIG
 
 ---
 
-### FULL / HALF DUPLEX
+### Full / Half Duplex
 
-#### HALF DUPLEX:
+#### Half Duplex:
 
 - Device cannot send / receive data at the same time. If it is receiving a frame, it must wait before sending a frame.
 
-#### FULL DUPLEX:
+#### Full Duplex:
 
 - Device CAN send / receive data at the same time. It does NOT have to wait.
 
