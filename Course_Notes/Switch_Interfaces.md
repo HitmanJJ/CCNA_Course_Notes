@@ -121,20 +121,19 @@ SWITCHES are Layer 2 Devices - Collisions RARELY occur.
 ![image](https://github.com/psaumur/CCNA/assets/106411237/feff3816-1449-4282-bc44-71575333a1e0)
 
 
-SPEED / DUPLEX AUTONEGOTIATION
+#### Speed/Duplex Autonegotiation
 
-- Interfaces that can run at different speeds (10/100 or 10/100/1000) have a default setting of SPEED AUTO and DUPLEX AUTO.
+- Interfaces that can run at different speeds (10/100 or 10/100/1000) have a default setting of ```Speed Auto``` and ```Duplex Auto```.
 - Interfaces 'advertise' their capabilities to the neighbouring device, and they negotiate the best SPEED and DUPLEX settings they are both capable of.
 
 WHAT if AUTONEGOTIATION is DISABLED on the device connected to the SWITCH ?
 
-![image](https://github.com/psaumur/CCNA/assets/106411237/30519cf7-0a79-4996-a8d8-dfac689f4005)
-
-
-- SPEED: The SWITCH will try to send at the speed that the other device is operating at.
+- **Speed**: The SWITCH will try to send at the speed that the other device is operating at.
 If it fails to send the speed, it will use the slowest supported speed (ie: 10 Mbps on a 10/100/1000 interface).
-- DUPLEX: If the speed is 10 or 100 Mbps the SWITCH will use HALF DUPLEX.
+- **Duplex**: If the speed is 10 or 100 Mbps the SWITCH will use HALF DUPLEX.
 If the speed is 1000 Mbps or great, it will use FULL DUPLEX.
+
+![image](https://github.com/psaumur/CCNA/assets/106411237/30519cf7-0a79-4996-a8d8-dfac689f4005)
 
 ---
 
