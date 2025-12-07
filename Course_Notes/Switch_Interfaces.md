@@ -143,7 +143,7 @@ Show using the:
 
 // Privileged EXEC mode
 
-```SW1#show interfaces {interface_name}```
+```SW1#show interfaces``` (all interfaces) or ```SW1#show interfaces {interface_name}``` (specific interface)
 
 Error stats will be at the bottom.
 
