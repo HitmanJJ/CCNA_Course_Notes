@@ -20,7 +20,7 @@ This will show the interfaces currently on Switch 1. It has the same information
 
 Notice the Status (Layer 2) and Protocol (Layer 1) columns are showing "up/up".
 
-Unlike ROUTERS, SWITCHES do no DEFAULT to 'administrative down/down'(shutdown).
+Unlike ROUTERS, SWITCHES <ins>**do NOT**</ins> DEFAULT to 'administrative down/down'(shutdown).
 
 Unconnected devices will show as "down" and "down" (not connected to another device)
 
