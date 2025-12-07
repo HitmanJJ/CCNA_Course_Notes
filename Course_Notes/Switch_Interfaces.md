@@ -78,13 +78,13 @@ Confirm with ```show interface status``` in Privileged EXEC mode or if in CONFIG
 
 ---
 
-FULL / HALF DUPLEX
+### FULL / HALF DUPLEX
 
-HALF DUPLEX:
+#### HALF DUPLEX:
 
 - Device cannot send / receive data at the same time. If it is receiving a frame, it must wait before sending a frame.
 
-FULL DUPLEX:
+#### FULL DUPLEX:
 
 - Device CAN send / receive data at the same time. It does NOT have to wait.
 
