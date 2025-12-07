@@ -130,8 +130,8 @@ WHAT if AUTONEGOTIATION is DISABLED on the device connected to the SWITCH ?
 
 - **Speed**: The SWITCH will try to send at the speed that the other device is operating at.
 If it fails to send the speed, it will use the slowest supported speed (ie: 10 Mbps on a 10/100/1000 interface).
-- **Duplex**: If the speed is 10 or 100 Mbps the SWITCH will use HALF DUPLEX.
-If the speed is 1000 Mbps or great, it will use FULL DUPLEX.
+- **Duplex**: If the speed is 10 or 100 Mbps, the SWITCH will use HALF DUPLEX.
+If the speed is >=1000 Mb/s, it will use FULL DUPLEX.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/30519cf7-0a79-4996-a8d8-dfac689f4005)
 
