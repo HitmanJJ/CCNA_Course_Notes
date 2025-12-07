@@ -92,17 +92,17 @@ Most modern switches support Full Duplex.
 
 ---
 
-WHERE is HALF DUPLEX used? Almost nowhere.
+Where is Half Duplex used? Almost nowhere.
 
 In the past, LAN HUBS used HALF DUPLEX.
 
-When multiple packets were received by the HUB, the HUB would simple FLOOD the connections with frame data, causing a COLLISION (on the interface), and hosts would not receive the frame  intact.
+When multiple packets are received by a HUB, the HUB floods the interfaces with each packet. This action causes a COLLISION (on the interface), and hosts would not receive any frame intact.
 
 All devices connected to a HUB are called a COLLISION DOMAIN.
 
-To DEAL with COLLISIONS, Ethernet devices use a mechanism called CSMA/CD.
+To deal with collisions, Ethernet devices use a mechanism called CSMA/CD.
 
-CSMA/CD = CARRIER SENSE MULTIPLE ACCESS with COLLISION DETECTION.
+#### **CSMA/CD** (**C**arrier **S**ense **M**ultiple **A**ccess w/ **C**ollision **D**etection)
 
 - Before sending frames, devices 'listen' to the collision domain until they detect that other devices are not sending.
 - IF a collision occurs, the device sends a jamming signal to inform the other devices that a collision happened.
