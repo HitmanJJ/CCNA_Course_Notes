@@ -51,10 +51,10 @@ To Review:
 #### Internet Header Length (IHL):
 
 - LENGTH is 4 bits.
-- Final field of IPv4 Header (Options) is variable in length so this field is necessary to indicate the total length of the header.
+- The final field of the IPv4 Header (```Options```) is variable in length, so this field is necessary to indicate the total length of the header.
 - IDs the length of the header in 4-BYTE INCREMENTS.
-- The MINIMUM value is 5 (5 * 4-bytes = 20 bytes) - Empty OPTIONS Field
-- The MAXIMUM value is 15 (15 * 4-bytes = 60 bytes)
+- The **MINIMUM** value is 5 (5 * 4-bytes = 20 bytes) - Empty OPTIONS Field
+- The **MAXIMUM** value is 15 (15 * 4-bytes = 60 bytes)
 
 MINIMUM IPv4 HEADER LENGTH = 20 Bytes!
 MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
