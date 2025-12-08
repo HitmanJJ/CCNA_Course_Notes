@@ -15,31 +15,31 @@ To Review:
 
 ---
 
-FIELDS OF THE IPv4 HEADER
+### FIELDS OF THE IPv4 HEADER
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f2667488-2769-4e62-bee7-eddbf9e00058)
 
 
-| FIELD | # OF BITS |
+| Field | # of Bits |
 | --- | --- |
-| VERSION | 4 |
+| Version | 4 |
 | IHL | 4 |
 | DSCP | 6 |
 | ECN | 2 |
-| TOTAL LENGTH | 16 |
-| IDENTIFICATION | 16 |
-| FLAGS | 3 |
-| FRAGMENT OFFSET | 13 |
-| TIME TO LIVE | 8 |
-| PROTOCOL | 8 |
-| HEADER CHECKSUM | 16 |
-| SOURCE ADDRESS | 32 |
-| DESTINATION ADDRESS | 32 |
-| OPTIONS | 320 Max |
+| Total Length | 16 |
+| Identification | 16 |
+| Flags | 3 |
+| Fragment Offset | 13 |
+| Time to Live | 8 |
+| Protocol | 8 |
+| Header Checksum | 16 |
+| Source Address | 32 |
+| Destination Address | 32 |
+| Options | 320 Max |
 
 ---
 
-VERSION:
+#### Version:
 
 - LENGTH is 4 bits.
 - IDs version of IP used (IPv4 or IPv6)
@@ -48,7 +48,7 @@ VERSION:
 
 ---
 
-INTERNET HEADER LENGTH (IHL):
+#### Internet Header Length (IHL):
 
 - LENGTH is 4 bits.
 - Final field of IPv4 Header (Options) is variable in length so this field is necessary to indicate the total length of the header.
@@ -61,7 +61,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 
 ---
 
-DSCP (Differentiated Services Code Point):
+#### DSCP (Differentiated Services Code Point):
 
 - LENGTH is 6 bits.
 - Used for QoS (Quality of Service)
@@ -69,7 +69,7 @@ DSCP (Differentiated Services Code Point):
 
 ---
 
-ECN (Explicit Congestion Notification):
+#### ECN (Explicit Congestion Notification):
 
 - LENGTH is 2 bits.
 - Provides end-to-end (between two endpoints) notification of network congestion WITHOUT dropping packets.
@@ -77,7 +77,7 @@ ECN (Explicit Congestion Notification):
 
 ---
 
-TOTAL LENGTH:
+#### Total Length:
 
 - LENGTH is 16 bits.
 - Indicates the TOTAL length of the packet (L3 Header + L4 Segment)
@@ -87,7 +87,7 @@ TOTAL LENGTH:
 
 ---
 
-IDENTIFICATION:
+#### Identification:
 
 - LENGTH is 16 bits.
 - If a packet is fragmented due to being too large, this field is used to identify which packet the fragment belongs to.
@@ -98,7 +98,7 @@ IDENTIFICATION:
 
 ---
 
-FLAGS:
+#### Flags:
 
 - LENGTH is 3 bits
 - Used to control/identify fragments.
@@ -108,7 +108,7 @@ FLAGS:
 
 ---
 
-FRAGMENT OFFSET:
+#### Fragment Offset:
 
 - LENGTH is 13 bits
 - Used to indicated the position of the fragment within the original, unfragmented IP Packet.
@@ -116,7 +116,7 @@ FRAGMENT OFFSET:
 
 ---
 
-TIME TO LIVE (TTL):
+#### Time to Live (TTL):
 
 - LENGTH is 8 bits
 - A router will drop a packet with a TTL of 0
@@ -127,7 +127,7 @@ TIME TO LIVE (TTL):
 
 ---
 
-PROTOCOL:
+#### Protocol:
 
 - LENGTH is 8 bits
 - Indicates the protocol of the encapsulated Layer 4 PDU
@@ -137,7 +137,7 @@ PROTOCOL:
 - Value of 89 : OSPF (Dynamic Routing Protocol)
 - List of protocol numbers on Wikipedia : List of IP Protocol Numbers
 
-HEADER CHECKSUM:
+#### Header Checksum:
 
 - LENGTH is 16 bits
 - A calculated checksum used to check for errors in the IPv4 header.
@@ -149,7 +149,7 @@ HEADER CHECKSUM:
 
 ---
 
-SOURCE and DESTINATION:
+#### Source and Destination:
 
 - LENGTH is 32 bits each
 - SOURCE IP = IPv4 ADDRESS of the Sender of the Packet.
@@ -157,7 +157,7 @@ SOURCE and DESTINATION:
 
 ---
 
-OPTIONS:
+#### Options:
 
 - LENGTH is 0-320 bits
 - Optional / Rarely Used
