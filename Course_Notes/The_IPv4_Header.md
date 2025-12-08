@@ -111,7 +111,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 #### Fragment Offset:
 
 - LENGTH is 13 bits
-- Used to indicated the position of the fragment within the original, unfragmented IP Packet.
+- Used to indicated the position of the fragment w/in the original, unfragmented IP Packet.
 - Allows fragmented packets to be reassembled even if the fragments arrive out of order.
 
 ---
@@ -122,7 +122,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 - A router will drop a packet with a TTL of 0
 - Used to prevent infinite loops
 - Originally designed to indicated a packets maximum lifetime in seconds.
-- In practice, indicates a 'hop count': each time the packet arrives at a router, the router decreases the TTL by 1.
+- In practice, it indicates a 'hop count': each time the packet arrives at a router, the router decreases the TTL by 1.
 - Recommended default TTL is 64.
 
 ---
@@ -134,7 +134,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 - Value of 1 : ICMP
 - Value of 6 : TCP
 - Value of 17 : UDP
-- Value of 89 : OSPF (Dynamic Routing Protocol)
+- Value of 89 : OSPF (a dynamic-routing protocol)
 - List of protocol numbers on Wikipedia : List of IP Protocol Numbers
 
 #### Header Checksum:
