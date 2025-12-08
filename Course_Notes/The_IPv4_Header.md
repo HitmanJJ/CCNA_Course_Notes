@@ -103,8 +103,8 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 - LENGTH is 3 bits
 - Used to control/identify fragments.
 - Bit 0: Reserved, always set to 0.
-- Bit 1: Don't Fragment (DF bit), used to indicate a packet that should not be fragmented.
-- Bit 2: More Fragments (MF bit), set to 1 if there are more fragments in the packet, set to 0 for the last fragment or NO fragments.
+- Bit 1: **Don't Fragment** (**DF bit**), used to indicate a packet that should not be fragmented.
+- Bit 2: **More Fragments** (**MF bit**), set to 1 if there are more fragments in the packet, set to 0 for the last fragment or NO fragments.
 
 ---
 
