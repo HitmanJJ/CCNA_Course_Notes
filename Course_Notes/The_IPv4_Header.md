@@ -61,7 +61,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 
 ---
 
-#### DSCP (Differentiated Services Code Point):
+#### Differentiated Services Code Point (DSCP):
 
 - LENGTH is 6 bits.
 - Used for QoS (Quality of Service)
@@ -69,7 +69,7 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 
 ---
 
-#### ECN (Explicit Congestion Notification):
+#### Explicit Congestion Notification (ECN):
 
 - LENGTH is 2 bits.
 - Provides end-to-end (between two endpoints) notification of network congestion WITHOUT dropping packets.
