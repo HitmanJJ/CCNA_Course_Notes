@@ -137,6 +137,8 @@ MAXIMUM IPv4 HEADER LENGTH = 60 Bytes!
 - Value of 89 : OSPF (a dynamic-routing protocol)
 - List of protocol numbers on Wikipedia : List of IP Protocol Numbers
 
+---
+
 #### Header Checksum:
 
 - LENGTH is 16 bits
