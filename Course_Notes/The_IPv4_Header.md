@@ -15,7 +15,7 @@ To Review:
 
 ---
 
-### FIELDS OF THE IPv4 HEADER
+### Fields of the IPv4 Header
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f2667488-2769-4e62-bee7-eddbf9e00058)
 
