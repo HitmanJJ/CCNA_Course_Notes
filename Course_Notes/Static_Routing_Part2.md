@@ -39,7 +39,9 @@
 
 #### Setting the Next-Hop IP Address Based on Destination Network
 
-```R1(config)#ip route {destination_network_ip_add} {destination_netmask} {next_hop_ip_add}```
+```R1(config)#ip route {destination_network_ip_add} {destination_netmask} {next_hop_ip_add}```  
+  
+↑ This command tells ```R1``` that, to send data to _{destination_network_ip_add}_ w/ a netmask of _{destination_netmask}_, forward the packet to _{next_hop_ip_add}_
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/012f4134-2667-421b-9b36-f449faebf423)
 
