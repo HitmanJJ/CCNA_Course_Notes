@@ -58,6 +58,10 @@ The line ```192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks```:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/6e3a2b3b-1590-4625-9bcf-cdaed95738d2)
 
+### Route Selection Practice Problems
+
+![image]()
+
 
 ### Summary
 ![image](https://github.com/psaumur/CCNA/assets/106411237/891fcfbe-7dc5-4fb2-9b02-c6905236761e)
