@@ -57,7 +57,15 @@ The Source and Destination IP Addresses remain the same as the packet moves betw
 
 ---
 
-STATIC ROUTE CONFIGURATION with *exit-interface*
+#### Static-Route Configuration w/ ```exit-interface```
+
+```R2(config)#ip route {destination_network_ip_add} {destination_netmask} {interface_name}```  
+  
+↑ This command tells ```R2``` that, to send data to _{destination_network_ip_add}_ w/ a netmask of _{destination_netmask}_, forward the packet out of the interface named _{interface_name}_
+
+A next-hop and exit-interface can be specified together:
+
+```R2(config)#ip route {destination_network_ip_add} {destination_netmask} {interface_name} {next_hop_ip_add}```  
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/dc93b5f9-791c-44fc-8b88-2053491183a9)
 
