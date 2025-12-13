@@ -29,7 +29,7 @@
 
 ---
 
-STATIC ROUTES:
+## Static Routes:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/10135afa-ace6-47f1-aada-1b73f243589b)
 
