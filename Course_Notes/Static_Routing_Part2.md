@@ -1,13 +1,11 @@
-# 11. STATIC ROUTING : PART 2
+# 11. Static Routing: Part 2
 
-REVIEW:
+### Review
 
-SWITCHES forward traffic WITHIN LAN's
-ROUTERS forward traffic BETWEEN LAN's
+Switches forward traffic w/in LANs
+Routers forward traffic between LAN's
 
-WAN (Wide Area Network)
-
-- Network spread over a large area
+**WAN (Wide Area Network)**: Network spread over a large area
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/e44ac71c-91e3-4963-85da-ac07e475b248)
 
