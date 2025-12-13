@@ -28,9 +28,14 @@ A **route** tells the router:
 
 **WAN (Wide Area Network)**: network that extends over a large geographic area.
 
+### Configuring IP Addresses on a Router
+
 ![image](https://github.com/psaumur/CCNA/assets/106411237/b3555fdd-37a4-4bc8-b998-76e0b5455bb1)
 
 ### Routing Tables
+- To show the routing table for router ```R1```: ```R1#show ip route```
+  - A Codes legend appears at the top of the result → lists the different protocols that routers can use to learn routes.
+  - Routes appear at the bottom 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/99e75230-de1c-4f48-acd0-3482bba256af)
 
