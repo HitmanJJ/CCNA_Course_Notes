@@ -23,7 +23,7 @@
 
 ---
 
-## Default Gateway
+## Default Gateway (Default Router)
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/63611407-719e-46d3-8331-a18533616285)
 
