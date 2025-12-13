@@ -51,8 +51,9 @@ A **route** tells the router:
 
 ---
 ### Route Selection
-
-The line ```192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks```:
+- If a router recieves a packet, and the destination IP <ins>**does not**</ins> have a matching entry in the routing table, the packet is **dropped**
+  - This is different from switches, which **flood** frames if they don't have a MAC table entry
+- The line ```192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks```:
   - Not a route
   - In the routing table, there are 2 routes to subnets that fit w/in the ```192.168.1.0/24``` Class C network, w/ 2 different netmasks (```/24``` and ```/32```)
 
