@@ -2,18 +2,22 @@
 
 ## Review
 
-Switches forward traffic w/in LANs
-Routers forward traffic between LAN's
-
-**WAN (Wide Area Network)**: Network spread over a large area
+- Switches forward traffic w/in LANs
+- Routers forward traffic between LAN's
+- **WAN (Wide Area Network)**: Network spread over a large area
 
 
 ### Connected and Local Routes
+
+#### Configuring router ```R2``` (from part-1's example):
+
 ![image](https://github.com/psaumur/CCNA/assets/106411237/e44ac71c-91e3-4963-85da-ac07e475b248)
 
+#### Configuring router ```R3```:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/289212da-6c94-44fb-a1e3-1c066b56d79c)
 
+#### Configuring router ```R4```:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f8f7d58b-89b7-412c-9cf6-c038338e105d)
 
