@@ -33,8 +33,6 @@
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/10135afa-ace6-47f1-aada-1b73f243589b)
 
----
-
 ### Static-Route Configuration:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/d375a428-e171-4212-9698-2f2589878884)
