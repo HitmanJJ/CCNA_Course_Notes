@@ -1,11 +1,6 @@
 # 11. ROUTING FUNDAMENTALS : PART 1
 
-
-
-
 ### What Is Routing?
-
-
 
 **Routing** is the process that routers use to determine the path that IP packets should take over a network to reach their destination.
 
@@ -18,7 +13,6 @@ There are two main routing methods (methods that routers use to learn routes):
 - **Static Routing**: A Network Engineer/Admin manually configures routes on the router.
 
 A **route** tells the router:
-
 - to send a packet to destination ```X```, you should send the pack to the **next hop** (the next router in the path to the destination) ```Y```
 - or if the destination is directly connected to the router, *send the packet directly to the destination.*
 - or if the destination is the router’s own IP address, *receive the packet for yourself (don’t forward it).*
@@ -31,7 +25,7 @@ A **route** tells the router:
 ### Configuring IP Addresses on a Router
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/b3555fdd-37a4-4bc8-b998-76e0b5455bb1)
-
+---
 ### Routing Tables
 - To show the routing table for router ```R1```: ```R1#show ip route```
   - A Codes legend appears at the top of the result → lists the different protocols that routers can use to learn routes.
@@ -39,6 +33,7 @@ A **route** tells the router:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/99e75230-de1c-4f48-acd0-3482bba256af)
 
+---
 ### Connected and Local Routes
 - A connected and local route will be added automatically to a routing table when an IP address is configured on a router interface, and the interface face is enabled with the ```no shutdown``` command
 - **Connected route**: a route to the <ins>**network**</ins> the interface is connected to
