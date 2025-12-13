@@ -7,19 +7,19 @@
 
 
 
-ROUTING is the process that routers use to determine the path that IP packets should take over a network to reach their destination.
+**Routing** is the process that routers use to determine the path that IP packets should take over a network to reach their destination.
 
-- ROUTERS store routes to all their known destinations in a ROUTING TABLE
-- When ROUTERS receive PACKETS, they look in the ROUTING TABLE to find the best route to forward that packet.
+- Routers store routes to all their known destinations in a **routing table**
+- When routers receive packets, they look in the **routing table** to find the best route to forward that packet.
 
 There are two main routing methods (methods that routers use to learn routes):
 
-- DYNAMIC ROUTING : ROUTERS use Dynamic Routing Protocols (ie: OSPF) to share routing information with each other automatically and build their routing tables.
-- STATIC ROUTING : A network engineer / Admin manually configures routes on the router.
+- **Dynamic Routing** : Routers use Dynamic-Routing Protocols (ie: OSPF) to share routing information with each other automatically and build their routing tables.
+- **Static Routing** : A Network Engineer/Admin manually configures routes on the router.
 
-A ROUTE tells the ROUTER :
+A **route** tells the router:
 
-- to send a packet to Destination X, you should send the pack to ***next-hop*** Y
+- to send a packet to destination ```X```, you should send the pack to ***next-hop*** ```Y```
 - or if the Destination is directly connected to the router, *send the packet directly to the destination.*
 - or if the Destination is the router’s own IP address, *receive the packet for yourself (don’t forward it).*
 
