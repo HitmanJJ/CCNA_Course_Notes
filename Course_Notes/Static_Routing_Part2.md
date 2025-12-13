@@ -1,12 +1,14 @@
 # 11. Static Routing: Part 2
 
-### Review
+## Review
 
 Switches forward traffic w/in LANs
 Routers forward traffic between LAN's
 
 **WAN (Wide Area Network)**: Network spread over a large area
 
+
+### Connected and Local Routes
 ![image](https://github.com/psaumur/CCNA/assets/106411237/e44ac71c-91e3-4963-85da-ac07e475b248)
 
 
