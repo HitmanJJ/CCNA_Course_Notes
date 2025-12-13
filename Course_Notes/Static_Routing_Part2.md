@@ -51,6 +51,7 @@
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4379f8fb-a366-4279-a31c-ff2ba3f6fdb8)
 
+The Source and Destination IP Addresses remain the same as the packet moves between networks via routers. Only the Source and Destination MAC addresses will change at each hop.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/6fed6489-c53c-404e-b794-b71c2e9b8e4f)
 
