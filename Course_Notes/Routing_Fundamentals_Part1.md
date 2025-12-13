@@ -19,9 +19,9 @@ There are two main routing methods (methods that routers use to learn routes):
 
 A **route** tells the router:
 
-- to send a packet to destination ```X```, you should send the pack to the [**next hop**](## "the next router in the path to the destination") ```Y```
-- or if the Destination is directly connected to the router, *send the packet directly to the destination.*
-- or if the Destination is the router’s own IP address, *receive the packet for yourself (don’t forward it).*
+- to send a packet to destination ```X```, you should send the pack to the **next hop** (the next router in the path to the destination) ```Y```
+- or if the destination is directly connected to the router, *send the packet directly to the destination.*
+- or if the destination is the router’s own IP address, *receive the packet for yourself (don’t forward it).*
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/8ceefb10-d70d-4530-969d-40347ed34297)
 
