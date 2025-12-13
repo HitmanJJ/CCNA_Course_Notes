@@ -40,9 +40,9 @@ A **route** tells the router:
 ---
 ### Connected and Local Routes
 - A connected and local route will be added automatically to a routing table when an IP address is configured on a router interface, and the interface face is enabled with the ```no shutdown``` command
-- **Connected route**: a route to the <ins>**network**</ins> the interface is connected to
+- **Connected (C) route**: a route to the <ins>**network**</ins> the interface is connected to
   - Provides a route to all hosts in that network
-- **Local route**: a route to the <ins>**exact IP address**</ins> configured on the interface
+- **Local (L) route**: a route to the <ins>**exact IP address**</ins> configured on the interface
   - A ```/32``` netmask (subnet mask) is used to specify the exact IP address on the interface 
 
 ### Connected-Route Example
