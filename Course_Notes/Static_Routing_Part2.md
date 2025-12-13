@@ -21,6 +21,9 @@
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f8f7d58b-89b7-412c-9cf6-c038338e105d)
 
+---
+
+## Default Gateway
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/63611407-719e-46d3-8331-a18533616285)
 
