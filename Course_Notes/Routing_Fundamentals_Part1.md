@@ -14,8 +14,8 @@
 
 There are two main routing methods (methods that routers use to learn routes):
 
-- **Dynamic Routing** : Routers use Dynamic-Routing Protocols (ie: OSPF) to share routing information with each other automatically and build their routing tables.
-- **Static Routing** : A Network Engineer/Admin manually configures routes on the router.
+- **Dynamic Routing**: Routers use Dynamic-Routing Protocols (ie: OSPF) to share routing information with each other automatically and build their routing tables.
+- **Static Routing**: A Network Engineer/Admin manually configures routes on the router.
 
 A **route** tells the router:
 
@@ -26,7 +26,7 @@ A **route** tells the router:
 ![image](https://github.com/psaumur/CCNA/assets/106411237/8ceefb10-d70d-4530-969d-40347ed34297)
 
 
-WAN (Wide Area Network) = network that extends over a large geographic area.
+**WAN (Wide Area Network)**: network that extends over a large geographic area.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/b3555fdd-37a4-4bc8-b998-76e0b5455bb1)
 
