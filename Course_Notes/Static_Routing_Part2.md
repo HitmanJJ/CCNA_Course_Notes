@@ -37,7 +37,9 @@
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/d375a428-e171-4212-9698-2f2589878884)
 
-#### Setting the Next-Hop Address
+#### Setting the Next-Hop IP Address Based on Destination Network
+
+```R1(config)#ip route {destination_network_ip_add} {netmask} {next_hop_ip_add}```
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/012f4134-2667-421b-9b36-f449faebf423)
 
