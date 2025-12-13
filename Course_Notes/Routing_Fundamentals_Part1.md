@@ -1,4 +1,4 @@
-# 11. ROUTING FUNDAMENTALS : PART 1
+# 11. Routing Fundamentals : Part 1
 
 ### What Is Routing?
 
