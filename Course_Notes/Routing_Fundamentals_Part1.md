@@ -58,9 +58,11 @@ The line ```192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks```:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/6e3a2b3b-1590-4625-9bcf-cdaed95738d2)
 
-### Route Selection Practice Problems
+### Route-Selection Practice Problems
 
-![image]()
+Determine how router ```R1``` will handle each of the 5 packets it receives
+
+![image](https://github.com/HitmanJJ/CCNA_Course_Notes/blob/ece84133dad6ca8bb9959c083b8ca33508c2f461/assets/route_selection_practice.png)
 
 
 ### Summary
