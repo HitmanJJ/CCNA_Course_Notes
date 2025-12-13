@@ -29,14 +29,15 @@
 
 ---
 
-## Static Routes:
+## Static Routes
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/10135afa-ace6-47f1-aada-1b73f243589b)
 
-### Static-Route Configuration:
+### Static-Route Configuration
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/d375a428-e171-4212-9698-2f2589878884)
 
+#### Setting the Next-Hop Address
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/012f4134-2667-421b-9b36-f449faebf423)
 
