@@ -39,6 +39,13 @@ A **route** tells the router:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/99e75230-de1c-4f48-acd0-3482bba256af)
 
+### Connected and Local Routes
+- A connected and local route will be added automatically to a routing table when an IP address is configured on a router interface, and the interface face is enabled with the ```no shutdown``` command
+- **Connected route**: a route to the <ins>**network**</ins> the interface is connected to
+  - Provides a route to all hosts in that network
+- **Local route**: a route to the <ins>**exact IP address**</ins> configured on the interface
+  - A ```/32``` netmask (subnet mask) is used to specify the exact IP address on the interface 
+
 ![image](https://github.com/psaumur/CCNA/assets/106411237/13a77d5c-497d-49ca-9717-ea3bb4a560d0)
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/6e3a2b3b-1590-4625-9bcf-cdaed95738d2)
