@@ -71,6 +71,6 @@ A next-hop and exit-interface can be specified together:
 
 ---
 
-DEFAULT ROUTE
+## Default Route
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/a0eef93a-b40b-409b-8b51-6cdbace4ff45)
