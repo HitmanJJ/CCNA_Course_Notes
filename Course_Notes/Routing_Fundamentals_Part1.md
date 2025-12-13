@@ -60,7 +60,7 @@ The line ```192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks```:
 
 ### Route-Selection Practice Problems
 
-Determine how router ```R1``` will handle each of the 5 packets it receives
+Determine how router ```R1``` will handle each of the 5 packets (bottom right) it receives
 
 ![image](https://github.com/HitmanJJ/CCNA_Course_Notes/blob/ece84133dad6ca8bb9959c083b8ca33508c2f461/assets/route_selection_practice.png)
 
