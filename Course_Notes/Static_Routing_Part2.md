@@ -35,7 +35,7 @@
 
 ---
 
-STATIC ROUTE CONFIGURATION:
+### Static-Route Configuration:
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/d375a428-e171-4212-9698-2f2589878884)
 
