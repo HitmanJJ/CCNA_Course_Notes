@@ -3,7 +3,7 @@
 
 
 
-### What is routing?
+### What Is Routing?
 
 
 
@@ -29,6 +29,8 @@ A **route** tells the router:
 **WAN (Wide Area Network)**: network that extends over a large geographic area.
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/b3555fdd-37a4-4bc8-b998-76e0b5455bb1)
+
+### Routing Tables
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/99e75230-de1c-4f48-acd0-3482bba256af)
 
