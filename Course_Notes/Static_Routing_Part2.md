@@ -41,7 +41,7 @@
 
 ```R1(config)#ip route {destination_network_ip_add} {destination_netmask} {next_hop_ip_add}```  
   
-↑ This command tells ```R1``` that, to send data to _{destination_network_ip_add}_ w/ a netmask of _{destination_netmask}_, forward the packet to _{next_hop_ip_add}_
+↑ This command tells ```R1``` that--to send data to _```{destination_network_ip_add}```_ w/ a netmask of _```{destination_netmask}```_--forward the packet to _```{next_hop_ip_add}```_
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/012f4134-2667-421b-9b36-f449faebf423)
 
@@ -61,7 +61,7 @@ The Source and Destination IP Addresses remain the same as the packet moves betw
 
 ```R2(config)#ip route {destination_network_ip_add} {destination_netmask} {interface_name}```  
   
-↑ This command tells ```R2``` that, to send data to _{destination_network_ip_add}_ w/ a netmask of _{destination_netmask}_, forward the packet out of the interface named _{interface_name}_
+↑ This command tells ```R2``` that--to send data to _```{destination_network_ip_add}```_ w/ a netmask of _```{destination_netmask}```_--forward the packet out of the interface named _```{interface_name}```_
 
 A next-hop and exit-interface can be specified together:
 
