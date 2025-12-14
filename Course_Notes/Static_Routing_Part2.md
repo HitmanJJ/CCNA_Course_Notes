@@ -73,4 +73,8 @@ A next-hop and exit-interface can be specified together:
 
 ## Default Route
 
+- **Default Route:** a network configuration that specifies the path for forwarding packets when no more specific route matches the destination IP address
+  - Common default route is: ```0.0.0.0/0``` for IPv4, or ```::/0``` for IPv6
+    - For IPv6, the **unspecified address** is: ```0:0:0:0:0:0:0:0```, or ```::``` for short
+
 ![image](https://github.com/psaumur/CCNA/assets/106411237/a0eef93a-b40b-409b-8b51-6cdbace4ff45)
