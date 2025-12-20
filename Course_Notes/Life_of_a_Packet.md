@@ -1,21 +1,21 @@
-# 12. LIFE OF A PACKET
+# 12. Life of a Packet
+
+## Network Topology
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/ec16b9fd-4d90-4b73-b930-cd825ff13b00)
 
 
-EACH Network device's interfaces have a UNIQUE MAC Addresses.
+Each interface on a network device has a unique MAC address.
 
-In a TCP HEADER
-
-SOURCE IP ADDRESS comes before DESTINATION IP ADDRESS
+In an IPv4 and IPv6 header, SOURCE IP ADDRESS comes before DESTINATION IP ADDRESS
 
 while...
 
-in an ETHERNET HEADER
-
-DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
+in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ---
+
+## Address Resolution Protocol (ARP)
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/5eb94811-32f3-47f6-884e-f45a71456e84)
 
