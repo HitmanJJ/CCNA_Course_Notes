@@ -52,7 +52,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 ![image](https://github.com/psaumur/CCNA/assets/106411237/163bfaf6-15c7-4f7d-9429-4c62a28f0292)
 
 - R2 receives the frame, then removes the L2 header
--  
+- R2 examines the destination IP address of the packet, then checks its routing table to find the next hop
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/1f7e5683-00e6-4ce0-b52a-ca8fdb24c87b)
 
