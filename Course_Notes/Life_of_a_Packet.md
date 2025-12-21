@@ -17,6 +17,13 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ## Scenario: PC1 Wants to Communicate W/ PC4
 
+### Scenario Network Topology
+
+PC1 has data that it would like to send to PC4
+
+![image](https://github.com/HitmanJJ/CCNA_Course_Notes/blob/a65dd302132e92055be71f3acfc1d079e7128c26/assets/lifeOfAPacket_topology.png)
+
+### Address Resolution: PC1 Resolves R1's MAC Address
 1. PC1 sends an _**ARP Request**_ (containing source and destination addresses) to SW1
     - The  _**ARP Request**_ frame contains the following:
       - **Ethernet header**--notable fields include:
@@ -38,6 +45,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/5eb94811-32f3-47f6-884e-f45a71456e84)
 
+### Frame Re-Write: PC1 Sends Data Frame to R1
 - Now, PC1 knows the MAC address of R1 (PC1's default gateway)
 - PC1 encapsulates the packet w/ an Ethernet header
 - The original packet in unchanged--only an Ethernet header (L2 header) is added
@@ -46,6 +54,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/dc0d05cc-9b76-4921-895d-bfbe78ceb0a7)
 
+### Address Resolution: R1 Resolves R2's MAC Address
 - R1 recieves the frame, then removes the L2 header
 - R1 checks the destination IP address in the **_ARP Payload_**
 - R1 looks up the destination IP in its routing table to find the next hop
@@ -60,6 +69,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/36459aeb-e802-4347-b626-0c9cc168c624)
 
+### Frame Re-Write: R1 Sends Data Frame to R2
 - Now, R1 knows R2's MAC address
 - R1 encapsulates the packet w/ an Ethernet header
 - The destination MAC address for the packet is now R2's MAC address
@@ -67,6 +77,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/163bfaf6-15c7-4f7d-9429-4c62a28f0292)
 
+### Address Resolution: R2 Resolves R4's MAC Address
 - R2 receives the frame,
 - R2 sees that the destination MAC address matches its own MAC address on interface `Gi0/0`
 - R2 removes the L2 header
@@ -91,11 +102,13 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/07c44007-a208-47a2-a0e8-ca289f86be75)
 
-- R2 encapsulates the IP packet that it received from R1 in an earlier step
+### Frame Re-Write: R2 Sends Data Frame to R4
+- R2 encapsulates the IP packet that it received from R1, before the most recent ARP process
   - R2 adds a L2 header to the IP packet, w/ a destination set for R4's `Gi0/1` interface
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4bcbdba0-234a-4cfa-aa25-cbc3c3c061e1)
 
+### Address Resolution: R4 Resolves PC4's MAC Address
 - R4 receives the frame, then removes the L2 header
 - R4 looks up `192.164.4.1` in its routing table
 - The most-specific match in R4's routing table is the entry for `192.168.4.0/24`
@@ -113,17 +126,22 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 - PC4 checks the L2 header on the **_ARP Request_** frame, and sees that it is a broadcast (destination MAC is `FF:FF:FF:FF:FF:FF`)
 - PC4 removes the L2 header
 - PC4 examines destination IP address in the **_ARP Payload_**
-- PC4 sees that its IP address matches the destination IP address of the **_ARP Payload_**
+- PC4 sees that its own IP address matches the destination IP address of the **_ARP Payload_**
 - PC4 creates and sends a unicast **_ARP Reply_** frame to R4
     - PC4's IP and MAC address for the source
     - R4's IP and MAC address for the destination 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4bf8c10b-1240-4e7d-8db4-85ea5f3f619f)
 
+### Frame Re-Write: R4 Sends Data Frame to PC4
 - R4 receives the **_ARP Reply_** from PC4
+- R4 adds a L2 header to the packet destined for PC4
+- R4 sends the frame to PC4
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f938e440-ebdb-444c-b4c7-705d8fd2a4e9)
 
+### PC4 Replies to PC1
+- Since all of the network devices have gone through the ARP process while PC1 was sending data to PC4, no additional **_ARP Requests_** nor **_ARP Replies_** will need to be sent
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/1f236bda-d2cf-4252-af3b-bdc5ec5c2aca)
 
