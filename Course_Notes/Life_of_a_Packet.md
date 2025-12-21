@@ -114,10 +114,13 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 - PC4 removes the L2 header
 - PC4 examines destination IP address in the **_ARP Payload_**
 - PC4 sees that its IP address matches the destination IP address of the **_ARP Payload_**
-- PC4 creates and sends a unicast **_ARP Reply_** frame to R4 
+- PC4 creates and sends a unicast **_ARP Reply_** frame to R4
+    - PC4's IP and MAC address for the source
+    - R4's IP and MAC address for the destination 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4bf8c10b-1240-4e7d-8db4-85ea5f3f619f)
 
+- R4 receives the **_ARP Reply_** from PC4
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f938e440-ebdb-444c-b4c7-705d8fd2a4e9)
 
