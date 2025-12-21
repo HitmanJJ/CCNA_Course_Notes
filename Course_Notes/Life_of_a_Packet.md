@@ -18,21 +18,21 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 ## Scenario: PC1 Wants to Communicate W/ PC4
 
 1. PC1 sends an _**ARP Request**_ (containing source and destination addresses) to SW1
-  - The  _**ARP Request**_ frame contains the following:
-    - **Ethernet header**--notable fields include:
-      - **Destination MAC address** → since _**ARP Requests**_ are broadcasts, the destination address is `FF:FF:FF:FF:FF:FF`)
-      - **Source MAC address** → the MAC address of the device sending the frame
-      - **EtherType** → `0x0806` is the value identifies protocol as ARP
-    - **ARP Payload**--notable fields include:
-      - **Opcode (Operation Code)** →  tells the receiver what the message is
-        - `1` = ARP Request
-        - `2` = ARP Reply
-      - **Sender Hardware Address** → the MAC address of the sender
-      - **Sender Protocol Address** → the IP address of the sender
-      - **Target Hardware Address**
-        - For _**ARP Requests**_: ignored or set to `00:00:00:00:00:00` (because it isn't known yet)
-        - For _**ARP Replies**_: the requester's MAC address
-      - **Target Protocol Address** → the IP address of the intended receiver
+    - The  _**ARP Request**_ frame contains the following:
+      - **Ethernet header**--notable fields include:
+        - **Destination MAC address** → since _**ARP Requests**_ are broadcasts, the destination address is `FF:FF:FF:FF:FF:FF`
+        - **Source MAC address** → the MAC address of the device sending the frame
+        - **EtherType** → `0x0806` is the value identifies protocol as ARP
+      - **ARP Payload**--notable fields include:
+        - **Opcode (Operation Code)** →  tells the receiver what the message is
+          - `1` = ARP Request
+          - `2` = ARP Reply
+        - **Sender Hardware Address** → the MAC address of the sender
+        - **Sender Protocol Address** → the IP address of the sender
+        - **Target Hardware Address**
+          - For _**ARP Requests**_: ignored or set to `00:00:00:00:00:00` (because it isn't known yet)
+          - For _**ARP Replies**_: the requester's MAC address
+        - **Target Protocol Address** → the IP address of the intended receiver
 2. SW1 broadcasts the _**ARP Request**_ to all interfaces (except the interface it recieved the frame on)
 3. R1 sends an _**ARP Reply**_ (containing its MAC address) to PC1
 
@@ -91,7 +91,7 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/07c44007-a208-47a2-a0e8-ca289f86be75)
 
-- R2 encapsulates the IP packet that it received from PC1 in an earlier step
+- R2 encapsulates the IP packet that it received from R1 in an earlier step
   - R2 adds a L2 header to the IP packet, w/ a destination set for R4's `Gi0/1` interface
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4bcbdba0-234a-4cfa-aa25-cbc3c3c061e1)
@@ -110,7 +110,11 @@ in an Ethernet header, DESTINATION MAC ADDRESS comes before SOURCE MAC ADDRESS
 ![image](https://github.com/psaumur/CCNA/assets/106411237/91cfe407-28b5-48e8-b5f8-a60b324e0706)
 
 - PC4 receives the **_ARP Request_** frame
-- PC4 checks the destination IP address
+- PC4 checks the L2 header on the **_ARP Request_** frame, and sees that it is a broadcast (destination MAC is `FF:FF:FF:FF:FF:FF`)
+- PC4 removes the L2 header
+- PC4 examines destination IP address in the **_ARP Payload_**
+- PC4 sees that its IP address matches the destination IP address of the **_ARP Payload_**
+- PC4 creates and sends a unicast **_ARP Reply_** frame to R4 
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/4bf8c10b-1240-4e7d-8db4-85ea5f3f619f)
 
