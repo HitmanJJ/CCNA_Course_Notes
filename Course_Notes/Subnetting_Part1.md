@@ -1,4 +1,4 @@
-# 13. SUBNETTING : PART 1
+# 13. Subnetting: Part 1
 
 ![image](https://github.com/psaumur/CCNA/assets/106411237/a475e909-59b8-4615-a0b9-8a3c1fbdc313)
 
