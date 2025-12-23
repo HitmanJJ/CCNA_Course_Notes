@@ -5,7 +5,7 @@ There are 5 classes of IPv4 addresses:
 ![image](https://github.com/psaumur/CCNA/assets/106411237/a475e909-59b8-4615-a0b9-8a3c1fbdc313)
 
 
-However, only Class A, B, C addresses can be assigned to a device as an IP Address.
+However, only Class A, B, C addresses can be assigned to a device as an IP address (Class D & E are reserved)
 
 | Class | Prefix Length |
 |-------|---------------|
@@ -16,7 +16,7 @@ However, only Class A, B, C addresses can be assigned to a device as an IP Addre
 ![image](https://github.com/psaumur/CCNA/assets/106411237/f0836136-c4a9-475b-b6c2-d1c550b8cfdd)
 
 
-The IANA (Internet Assigned Numbers Authority) assigns IPv4 addresses/networks to companies based on their size.
+The _**IANA (Internet Assigned Numbers Authority)**_ assigns IPv4 addresses/networks to companies based on their size.
 
 The problem with 'CLASSFUL' assignment is that it led to IP Address wastefulness.
 
@@ -33,8 +33,8 @@ CIDR (Classless Inter-Domain Routing) removed the requirements of CLASS A, B, an
 
 ---
 
-HOW MANY USABLE ADDRESSES ARE THERE IN EACH NETWORK?
-
+How Many Usable Addresses Are There in Each Network?
+  
 REMEMBER:
 
 2^n - 2 = Usable Address
