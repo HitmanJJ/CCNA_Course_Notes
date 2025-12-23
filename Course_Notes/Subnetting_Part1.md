@@ -24,7 +24,7 @@ Example: A company requiring 5000 address was assigned a CLASS B IP, leaving 600
 
 ---
 
-The IETF (Internet Engineering Task Force) introduce CIDR in 1993 to replace the "classful" addressing system.
+The **_IETF (Internet Engineering Task Force)_** introduced CIDR in 1993 to replace the "classful" addressing system.
 
 CIDR (Classless Inter-Domain Routing) removed the requirements of CLASS A, B, and C regarding size.
 
@@ -37,10 +37,10 @@ How Many Usable Addresses Are There in Each Network?
   
 REMEMBER:
 
-2^n - 2 = Usable Address
-n = number of host bits
+2<sup>n</sup> - 2 = # of usable addresses  
+(where _n_ = # of host bits)
 
-CIDR PRACTICE!
+CIDR Practice!
 
 203.0.113.0/25
 
