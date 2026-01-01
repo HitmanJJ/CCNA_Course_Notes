@@ -23,6 +23,7 @@ The problem with 'CLASSFUL' assignment is that it led to IP Address wastefulness
 Example: A company requiring 5000 address was assigned a CLASS B IP, leaving 60000+ addresses unused.
 
 ---
+## CIDR (Classless Inter-Domain Routing)
 
 The **_IETF (Internet Engineering Task Force)_** introduced CIDR in 1993 to replace the "classful" addressing system.
 
@@ -35,34 +36,34 @@ The **_IETF (Internet Engineering Task Force)_** introduced CIDR in 1993 to repl
 
 How Many Usable Addresses Are There in Each Network?
   
-REMEMBER:
+**Remember**:
 
 **2<sup>n</sup> - 2 = # of usable addresses** (where _n_ = # of host bits)
 
-CIDR Practice!
+### CIDR Practice
 
-203.0.113.0/25
+`203.0.113.0/25`
 
-/25 means the Subnetwork bit is 25 bits
+`/25` means the # of subnet bits is 25
 
-203 . 0 . 113 . 0 is written in binary as :
+`203 . 0 . 113 . 0` is written in binary as :
 
-1100 1011 . 0000 0000 . 0111 0001 . 0 | 000 0000
+`1100 1011 . 0000 0000 . 0111 0001 . 0 | 000 0000`
 
 (Subnet prefix is the first 25 bits)
 
-Flipping all the bits to 1’s, we get the SUBNET MASK for /25:
+Flipping all the network bits to 1’s, we get the SUBNET MASK for /25:
 
-1111 1111 . 1111 1111 . 1111 1111 . 1 | 000 0000
+`1111 1111 . 1111 1111 . 1111 1111 . 1 | 000 0000` (← remaining 7 bits in the last octet are separated to distinguish the new network bit in the last octet)
 
 which is equal to:
 
-255.255.255.128 (because the last octet is 1000 0000 = 128 in binary)
+`255.255.255.128` (because the last octet is 1000 0000 = 128 in binary)
 
-SO - the based on previous definition of USABLE ADDRESSES, the number of hosts for
-203.0.113.0 /25 is:
+So, based on the previous formula for USABLE ADDRESSES, the number of hosts for  
+`203.0.113.0/25` is:
 
-2^(7 bits) or (128) - 2 = 126 hosts.
+**2<sup>(7 host bits)</sup> - 2 = 126 hosts**
 
 ---
 
