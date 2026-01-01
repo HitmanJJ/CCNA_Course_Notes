@@ -32,6 +32,23 @@ The **_IETF (Internet Engineering Task Force)_** introduced CIDR in 1993 to repl
 - This allowed larger networks to be split into smaller networks, allowing greater efficiency.
 - These smaller networks are called "SUB-NETWORKS" or "SUBNETS"
 
+
+### Network Bits vs Subnet Bits vs Host Bits
+
+**Network bits**: the bits fixed by the class of the network
+
+**Subnet bits**: the bits that are "borrowed" from the remaining host bits
+
+**Host bits**: the remaining bits--after the network and subnet bits--that are available to be used by hosts on the network
+
+- Example: For this Class C network: `192.168.10.5/26` with a subnet mask of `255.255.255.192`
+  - The subnet mask can be written in binary as: `1111 1111 . 1111 1111 . 1111 1111 . 1100 0000` 
+  - Since it is Class C, the number of (fixed) network bits would be **24**
+  - A `/26` indicates that 2 bits were "borrowed" from the host bits, so the number of subnet bits would equal **2**
+  - The number of host bits are the remaining bits, which is **6** (**32 bits total** - **24 network bits** - **2 subnet bits** = **6 host bits**) 
+
+**Important note**: in the real world, the network and subnet bits are combined, and are collectively referred to as the prefix/network bits
+
 ---
 
 How Many Usable Addresses Are There in Each Network?
@@ -44,7 +61,7 @@ How Many Usable Addresses Are There in Each Network?
 
 `203.0.113.0/25`
 
-`/25` means the # of subnet bits is 25
+`/25` means the # of network bits is 25
 
 `203 . 0 . 113 . 0` is written in binary as :
 
@@ -67,17 +84,17 @@ So, based on the previous formula for USABLE ADDRESSES, the number of hosts for
 
 ---
 
-What about /28 ?
+`203.0.113.0/28`
 
-203 . 0 . 113 . 0 is written in binary as :
+`203 . 0 . 113 . 0` is written in binary as :
 
-1100 1011 . 0000 0000 . 0111 0001 . 0000 | 0000
+`1100 1011 . 0000 0000 . 0111 0001 . 0000 | 0000`
 
 (Subnet prefix is the first 28 bits)
 
-flipping all the bits to 1’s, we get the SUBNET MASK for /28:
+flipping all the bits to 1’s, we get the SUBNET MASK for `/28`:
 
-1111 1111 . 1111 1111 . 1111 1111 . 1111 | 0000
+`1111 1111 . 1111 1111 . 1111 1111 . 1111 | 0000`
 
 which is equal to:
 
