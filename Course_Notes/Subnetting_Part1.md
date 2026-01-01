@@ -98,9 +98,9 @@ flipping all the bits to 1’s, we get the SUBNET MASK for `/28`:
 
 which is equal to:
 
-255.255.255.240 (because the last octet is 1111 0000) = 128+64+32+16 =  (128+32) + (64+16) = 160 + 80 = 240
+`255.255.255.240` (because the last octet is 1111 0000) = 128+64+32+16 =  (128+32) + (64+16) = 160 + 80 = 240
 
-The SUBNET MASK for /28 is 255.255.255.240
+The SUBNET MASK for `/28` is `255.255.255.240`
 which has 16 hosts / group (2 * 4 bits = 16) - 2 Reserved IPs for Network and Broadcast 
 
 ---
