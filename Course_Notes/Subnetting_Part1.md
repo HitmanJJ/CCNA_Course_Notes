@@ -37,8 +37,7 @@ How Many Usable Addresses Are There in Each Network?
   
 REMEMBER:
 
-2<sup>n</sup> - 2 = # of usable addresses  
-(where _n_ = # of host bits)
+**2<sup>n</sup> - 2 = # of usable addresses** (where _n_ = # of host bits)
 
 CIDR Practice!
 
