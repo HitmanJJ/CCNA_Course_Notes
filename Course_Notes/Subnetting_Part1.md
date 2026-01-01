@@ -105,7 +105,7 @@ which has 16 hosts / group (2 * 4 bits = 16) - 2 Reserved IPs for Network and Br
 
 ---
 
-SUBNETTING CHEATSHEET:
+## Subnetting Cheatsheet:
 
 | Group Size | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
