@@ -26,7 +26,7 @@ Example: A company requiring 5000 address was assigned a CLASS B IP, leaving 600
 
 The **_IETF (Internet Engineering Task Force)_** introduced CIDR in 1993 to replace the "classful" addressing system.
 
-CIDR (Classless Inter-Domain Routing) removed the requirements of CLASS A, B, and C regarding size.
+**CIDR (Classless Inter-Domain Routing)** removed the requirements of CLASS A, B, and C regarding size.
 
 - This allowed larger networks to be split into smaller networks, allowing greater efficiency.
 - These smaller networks are called "SUB-NETWORKS" or "SUBNETS"
