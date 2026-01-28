@@ -59,6 +59,7 @@ How Many Usable Addresses Are There in Each Network?
 
 ### CIDR Practice
 
+#### /25 Network Example
 `203.0.113.0/25`
 
 `/25` means the # of network bits is 25
@@ -69,7 +70,7 @@ How Many Usable Addresses Are There in Each Network?
 
 (Subnet prefix is the first 25 bits)
 
-Flipping all the network bits to 1’s, we get the SUBNET MASK for /25:
+Flipping all of the network bits to 1’s, we get the SUBNET MASK for /25:
 
 `1111 1111 . 1111 1111 . 1111 1111 . 1 | 000 0000` (← remaining 7 bits in the last octet are separated to distinguish the new network bit in the last octet)
 
@@ -84,6 +85,7 @@ So, based on the previous formula for USABLE ADDRESSES, the number of hosts for
 
 ---
 
+#### /28 Network Example
 `203.0.113.0/28`
 
 `203 . 0 . 113 . 0` is written in binary as :
@@ -92,7 +94,7 @@ So, based on the previous formula for USABLE ADDRESSES, the number of hosts for
 
 (Subnet prefix is the first 28 bits)
 
-flipping all the bits to 1’s, we get the SUBNET MASK for `/28`:
+flipping all of the network bits to 1’s, we get the SUBNET MASK for `/28`:
 
 `1111 1111 . 1111 1111 . 1111 1111 . 1111 | 0000`
 
@@ -100,8 +102,41 @@ which is equal to:
 
 `255.255.255.240` (because the last octet is 1111 0000) = 128+64+32+16 =  (128+32) + (64+16) = 160 + 80 = 240
 
-The SUBNET MASK for `/28` is `255.255.255.240`
-which has 16 hosts / group (2 * 4 bits = 16) - 2 Reserved IPs for Network and Broadcast 
+The SUBNET MASK for `/28` is `255.255.255.240`, which has 16  total addresses; 14 of those 16 are usable addresses (**2<sup>4</sup> - 2 = 14**)
+
+---
+
+#### /31 Network Example
+`203.0.113.0/31`
+
+`203 . 0 . 113 . 0` is written in binary as :
+
+`1100 1011 . 0000 0000 . 0111 0001 . 0000 000 | 0`
+
+The last bit is the only host bit.
+
+So, the number of usable network addresses is: **2<sup>1</sup> - 2 = 0**
+
+This is why `/31` prefixes were previously un-usable. However, when using a point-to-point connection (for example: connecting 2 routers), it is valid to use a `/31` prefix because there is no need for the network and broadcast addresses.
+
+---
+
+#### /32 Network Example
+`203.0.113.0/32`
+
+`203 . 0 . 113 . 0` is written in binary as :
+
+`1100 1011 . 0000 0000 . 0111 0001 . 0000 0000`
+
+There are no host bits.
+
+So, the number of usable network addresses is: **2<sup>0</sup> - 2 = -1**
+
+A value of `-1` indicates that the formula is not valid for `/32` networks.
+
+A `/32` subnet mask would rarely be used, however, there are some scenarios where it would be recommended:
+
+  -  Creating a static route to a single host
 
 ---
 
