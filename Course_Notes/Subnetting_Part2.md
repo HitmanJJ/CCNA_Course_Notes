@@ -1,4 +1,4 @@
-# 14. SUBNETTING : PART 2
+# 14. Subnetting: Part 2
 
 CLASS C NETWORKS
 
